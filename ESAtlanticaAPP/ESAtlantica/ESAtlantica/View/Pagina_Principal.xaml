@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAtlantica.View.Pagina_Principal"
+            xmlns:local="clr-namespace:ESAtlantica.View;assembly=ESAtlantica">
+    
+   
+    <!--Pages can be added as references or inline-->
+    
+    <!--<NavigationPage Icon="button_denunciar.png">
+            <x:Arguments>
+                <local:Denunciar_Page />            
+            </x:Arguments>        
+        </NavigationPage>
+        <NavigationPage Icon="pesquisar.png">
+            <x:Arguments>
+                <local:Pesquisar_Page />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Icon="legislacao.png">
+            <x:Arguments>
+                <local:Legislacao_Page />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Icon="denuncias_salvas.png">
+            <x:Arguments>
+                <local:Denuncias_Salvas_Page />
+            </x:Arguments>
+        </NavigationPage>
+    
+    <local:Denunciar_Page></local:Denunciar_Page>
+    <local:Pesquisar_Page></local:Pesquisar_Page>
+    <local:Legislacao_Page></local:Legislacao_Page>    
+    <local:Denuncias_Salvas_Page></local:Denuncias_Salvas_Page> -->
+</TabbedPage>

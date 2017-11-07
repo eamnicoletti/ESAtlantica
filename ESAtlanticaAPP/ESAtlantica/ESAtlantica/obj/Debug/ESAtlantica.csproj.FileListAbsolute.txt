@@ -1,0 +1,85 @@
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\ESAtlantica.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\ESAtlantica.pdb
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Mono.Android.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.Abstractions.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.Abstractions.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\SQLite.Net.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Mono.Android.pdb
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Mono.Android.xml
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.xml
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.Abstractions.xml
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.pdb
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.xml
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.Abstractions.pdb
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.Abstractions.xml
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.csprojResolveAssemblyReference.cache
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.MainPage.xaml.g.cs
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.App.xaml.g.cs
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Legislacao_Page.xaml.g.cs
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Denunciar_Page.xaml.g.cs
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Pesquisar_Page.xaml.g.cs
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Listar_Denuncias_Salvas_Page.xaml.g.cs
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Pagina_Principal.xaml.g.cs
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.dll
+C:\Users\eamni\Documents\Visual Studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\ESAtlantica.dll.config
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\ESAtlantica.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\ESAtlantica.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Mono.Android.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Newtonsoft.Json.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.Abstractions.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Geolocator.Abstractions.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Geolocator.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.Abstractions.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\SQLite.Net.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\System.Net.Http.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Maps.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Mono.Android.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Mono.Android.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Newtonsoft.Json.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\PCLStorage.Abstractions.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Geolocator.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Geolocator.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Geolocator.Abstractions.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.Abstractions.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Plugin.Media.Abstractions.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\System.Net.Http.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Maps.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.csproj.App.config
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.csprojResolveAssemblyReference.cache
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.MainPage.xaml.g.cs
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.App.xaml.g.cs
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Legislacao_Page.xaml.g.cs
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Denunciar_Page.xaml.g.cs
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Pesquisar_Page.xaml.g.cs
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Listar_Denuncias_Salvas_Page.xaml.g.cs
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.View.Pagina_Principal.xaml.g.cs
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.dll
+C:\Users\eamni\Desktop\ESAtlantica\ESAtlantica\ESAtlantica\obj\Debug\ESAtlantica.pdb

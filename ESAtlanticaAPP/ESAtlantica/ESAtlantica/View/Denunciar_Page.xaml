@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:conv="clr-namespace:ESAtlantica.Converters;assembly=ESAtlantica"
+             x:Class="ESAtlantica.View.Denunciar_Page">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:ByteToImageSourceConverter x:Key="convImage"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>                
+                    <Grid	Padding="5,10,5,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition	Height="Auto"/>
+                            <RowDefinition	Height="Auto"/>
+                            <RowDefinition	Height="Auto"/>
+                            <RowDefinition	Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>                    
+                            <StackLayout Grid.Row="0">                            
+                                    <Label Text="Denunciar" Font="Bold, 18" TextColor="DarkGreen" HorizontalTextAlignment="Center" 
+                                           BackgroundColor="GhostWhite" Opacity="0.6"/>                           
+                            </StackLayout>
+                    
+                        <!--	5.	Definição	do	FRAME	e	GRID	que	receberá	os	dados	informados	pelo	usuário	-->
+                        <Frame	Grid.Row="1" Grid.Column="0" OutlineColor="Black" HasShadow="True" Padding="5,5,5,5">
+                            <StackLayout>
+                                <Grid RowSpacing="5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition	Height="Auto"/>
+                                        <RowDefinition	Height="Auto"/>
+                                        <RowDefinition	Height="Auto"/>
+                                        <RowDefinition	Height="Auto"/>
+                                        <RowDefinition	Height="Auto"/>
+                                        <RowDefinition	Height="Auto"/>
+                                        <RowDefinition	Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Text="Data do Fato" TextColor="Gray" Grid.Row="0" Grid.Column="1" FontSize="10"/>
+                                    <DatePicker Format="dd/MM/yyyy" x:Name="dpkData_denuncia" Grid.Row="1"  Grid.Column="1" Date="{Binding Data_denuncia}" 
+                                                MaximumDate="{x:Static sys:DateTime.Now}" MinimumDate="01/01/2012"></DatePicker>
+
+                                    <Entry	Placeholder="Nome do Acusado" PlaceholderColor="Gray" Grid.Row="2" Grid.Column="1"
+                                            Keyboard="Text" Text="{Binding Nome_acusado}"/>
+
+                                    <Label Text="*" TextColor="DarkGreen" Opacity="0.6" Font="Bold" Grid.Row="3" Grid.Column="0"/>
+                                    <Picker x:Name="pckTipoFato" Title="Tipo de Fato" Grid.Row="3" Grid.Column="1" SelectedItem="{Binding Tipo_fato}">
+                                        <Picker.Items >
+                                            <x:String>Animal Silvestre em Cativeiro</x:String>
+                                            <x:String>Caça Predatória</x:String>
+                                            <x:String>Degradação</x:String>
+                                            <x:String>Desmatamento</x:String>                                        
+                                            <x:String>Pesca Ilegal</x:String>
+                                            <x:String>Poluição</x:String>
+                                            <x:String>Queimada</x:String>
+                                        </Picker.Items>
+                                    </Picker>
+
+                                    <Label Text="*" TextColor="DarkGreen" Opacity="0.6" Font="Bold" Grid.Row="4" Grid.Column="0" WidthRequest="6"/>
+                                    <Entry Placeholder="Endereço do Fato" PlaceholderColor="Gray" Grid.Row="4" Grid.Column="1" Keyboard="Text" Text="{Binding Endereco_fato}"/>
+
+                                    <Label Text="*" TextColor="DarkGreen" Opacity="0.6" Font="Bold" Grid.Row="5" Grid.Column="0" WidthRequest="6" />
+                                    <Picker Title="Cidade" Grid.Row="5" Grid.Column="1" SelectedItem="{Binding Cidade_fato}">
+                                        <Picker.Items >
+                                            <x:String>Afonso Cláudio</x:String>
+                                            <x:String>Água Doce do Norte</x:String>
+                                            <x:String>Águia Branca</x:String>
+                                            <x:String>Alegre</x:String>
+                                            <x:String>Alfredo Chaves</x:String>
+                                            <x:String>Alto Rio Novo</x:String>
+                                            <x:String>Anchieta</x:String>
+                                            <x:String>Apiacá</x:String>
+                                            <x:String>Aracruz</x:String>
+                                            <x:String>Atilio Vivacqua</x:String>
+                                            <x:String>Baixo Guandu</x:String>
+                                            <x:String>Barra de São Francisco</x:String>
+                                            <x:String>Boa Esperança</x:String>
+                                            <x:String>Bom Jesus do Norte</x:String>
+                                            <x:String>Brejetuba</x:String>
+                                            <x:String>Cachoeiro de Itapemirim</x:String>
+                                            <x:String>Cariacica</x:String>
+                                            <x:String>Castelo</x:String>
+                                            <x:String>Colatina</x:String>
+                                            <x:String>Conceição da Barra</x:String>
+                                            <x:String>Conceição do Castelo</x:String>
+                                            <x:String>Divino de São Lourenço</x:String>
+                                            <x:String>Domingos Martins</x:String>
+                                            <x:String>Dores do Rio Preto</x:String>
+                                            <x:String>Ecoporanga</x:String>
+                                            <x:String>Fundão</x:String>
+                                            <x:String>Governador Lindenberg</x:String>
+                                            <x:String>Guaçuí</x:String>
+                                            <x:String>Guarapari</x:String>
+                                            <x:String>Ibatiba</x:String>
+                                            <x:String>Ibiraçu</x:String>
+                                            <x:String>Ibitirama</x:String>
+                                            <x:String>Iconha</x:String>
+                                            <x:String>Irupi</x:String>
+                                            <x:String>Itaguaçu</x:String>
+                                            <x:String>Itapemirim</x:String>
+                                            <x:String>Itarana</x:String>
+                                            <x:String>Iúna</x:String>
+                                            <x:String>Jaguaré</x:String>
+                                            <x:String>Jerônimo Monteiro</x:String>
+                                            <x:String>João Neiva</x:String>
+                                            <x:String>Laranja da Terra</x:String>
+                                            <x:String>Linhares</x:String>
+                                            <x:String>Mantenópolis</x:String>
+                                            <x:String>Marataízes</x:String>
+                                            <x:String>Marechal Floriano</x:String>
+                                            <x:String>Marilândia</x:String>
+                                            <x:String>Mimoso do Sul</x:String>
+                                            <x:String>Montanha</x:String>
+                                            <x:String>Mucurici</x:String>
+                                            <x:String>Muniz Freire</x:String>
+                                            <x:String>Muqui</x:String>
+                                            <x:String>Nova Venécia</x:String>
+                                            <x:String>Pancas</x:String>
+                                            <x:String>Pedro Canário</x:String>
+                                            <x:String>Pinheiros</x:String>
+                                            <x:String>Piúma</x:String>
+                                            <x:String>Ponto Belo</x:String>
+                                            <x:String>Presidente Kennedy</x:String>
+                                            <x:String>Rio Bananal</x:String>
+                                            <x:String>Rio Novo do Sul</x:String>
+                                            <x:String>Santa Leopoldina</x:String>
+                                            <x:String>Santa Maria de Jetibá</x:String>
+                                            <x:String>Santa Teresa</x:String>
+                                            <x:String>São Domingos do Norte</x:String>
+                                            <x:String>São Gabriel da Palha</x:String>
+                                            <x:String>São José do Calçado</x:String>
+                                            <x:String>São Mateus</x:String>
+                                            <x:String>São Roque do Canaã</x:String>
+                                            <x:String>Serra</x:String>
+                                            <x:String>Sooretama</x:String>
+                                            <x:String>Vargem Alta</x:String>
+                                            <x:String>Venda Nova do Imigrante</x:String>
+                                            <x:String>Viana</x:String>
+                                            <x:String>Vila Pavão</x:String>
+                                            <x:String>Vila Valério</x:String>
+                                            <x:String>Vila Velha</x:String>
+                                            <x:String>Vitória</x:String>                                        
+                                        </Picker.Items>
+                                    </Picker>
+
+                                    <Label Text="Descreva o Fato" TextColor="Gray" Grid.Row="6" Grid.Column="1" FontSize="10"
+                       HorizontalOptions="Start" Margin="0, 0, 0, 0"/>
+                                    <Label Text="*" TextColor="DarkGreen" Opacity="0.6" Font="Bold" FontSize="Small" Grid.Row="6" Grid.Column="0" WidthRequest="6"/>
+                                    <Editor Grid.Row="7" Grid.ColumnSpan="2" HeightRequest="80" Keyboard="Text" Text="{Binding Historico_fato}"/>
+                                    
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame	Grid.Row="2" Grid.Column="0" OutlineColor="Black" HasShadow="True" Padding="5,5,5,5">
+                            <StackLayout>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Button	Grid.Row="0" Text="Foto do Fato" Image="camera.png" Command="{Binding SelecionarFoto}"/>
+                                    <!--<Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="2" HorizontalOptions="End" Source="{Binding Foto_fato, Converter={StaticResource convImage}}"/>-->
+                                    <Button	Grid.Row="1" Text="Localização do Fato" Image="gps.png" Command="{Binding ObterCoordenadas}"/>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                    
+                        <!--	6.	Frame	e	Grid	que	hospedarão	os	botões	de	ação	para	o	formulário	de	
+                        entrada	de	dados	para	inserção	do	novo	Entregador	-->
+                        
+                            <StackLayout Grid.Row="3" Grid.Column="0" Padding="5,5,5,5" >
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition	Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                <!--
+                                    <Image Source="button_denunciar.png"  HorizontalOptions="Center">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                              Tapped="OnTappedDenunciar"
+                                              NumberOfTapsRequired="1" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <Image Source="button_denuncias_salvas.png" HorizontalOptions="Center">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                              Tapped="OnTappedSalvarDenuncia"
+                                              NumberOfTapsRequired="1" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                -->
+                                <Button	Grid.Row="0" Grid.Column="0" Image="button_denunciar.png" BackgroundColor="White" Command="{Binding RegistrarDenuncia}"/>
+                                <Button	Grid.Row="0" Grid.Column="1" Image="button_denuncias_salvas.png" BackgroundColor="White" Command="{Binding Gravar}"/>
+                                    
+                                </Grid>
+                            </StackLayout>
+
+                        <Label Text="* Campo obrigatório" Font="12" TextColor="DimGray" Grid.Row="4" BackgroundColor="GhostWhite" Opacity="0.6"/>
+                    
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="3,3,3,3">
+                    <Image Source="governoES.png"></Image>
+                </AbsoluteLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:conv="clr-namespace:ESAtlantica.Converters;assembly=ESAtlantica"
+             x:Class="ESAtlantica.View.Listar_Denuncias_Salvas_Page">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:ByteToImageSourceConverter x:Key="convImage"/>
+            <conv:SituacaoConverter x:Key="convSituacao"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout  Padding="5, 20, 5, 20">
+                    <Label Text="Denúncias Salvas" Font="Bold, 18" TextColor="DarkGreen" HorizontalTextAlignment="Center" 
+                       BackgroundColor="GhostWhite" Opacity="0.6"/>
+                </StackLayout>
+                <ListView x:Name="lvDenuncias" RowHeight="80">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Clicked="OnAlterarClick" CommandParameter="{Binding .}"
+                   Text="Alterar" />
+                                    <MenuItem Clicked="OnRemoverClick" CommandParameter="{Binding .}"
+                   Text="Remover" IsDestructive="True" />
+                                </ViewCell.ContextActions>
+                                <StackLayout Padding="4, 3, 4, 1" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="FillAndExpand" BackgroundColor="WhiteSmoke">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="65"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image Source="{Binding Foto_fato, Converter={StaticResource convImage}}" Grid.Row="0" Margin="1, 1, 1, 1"
+                                           Grid.Column="0" Grid.RowSpan="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+                                        <Label Text="{Binding Numero_formulario}" TextColor="DarkGreen" Font="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" 
+                                               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="1"/>
+
+                                        <Label Text="{Binding Data_denuncia, StringFormat='{0:dd/MM/yyyy}'}" TextColor="DarkSlateGray" FontSize="Small"
+                                           VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="1" />
+
+                                        <Label Text="{Binding Tipo_fato}" TextColor="DarkSlateGray" FontSize="12" VerticalOptions="Center" LineBreakMode="TailTruncation"
+                                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+                                        <Label Text="{Binding Endereco_fato}" TextColor="DarkSlateGray" FontSize="12" VerticalOptions="Center" HorizontalOptions="FillAndExpand" LineBreakMode="TailTruncation" 
+                                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="1" />
+
+                                        <Label Text="{Binding Cidade_fato}" TextColor="DarkSlateGray" FontSize="12" VerticalOptions="Center" HorizontalOptions="FillAndExpand" LineBreakMode="TailTruncation" 
+                                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="2"/>
+
+                                        <Image Source="{Binding Situacao, Converter={StaticResource convSituacao}}" BackgroundColor="Transparent" VerticalOptions="Center" 
+                                               HorizontalOptions="End" Grid.Row="0" HeightRequest="20" Grid.Column="4"/>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="3,3,3,3">
+                    <Image Source="governoES.png"></Image>
+                </AbsoluteLayout>
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,2 @@
+C:\Users\eamni\documents\visual studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica.UWP\ESAtlantica.UWP.csproj;x86
+C:\Users\eamni\documents\visual studio 2017\Projects\ESAtlantica\ESAtlantica\ESAtlantica\ESAtlantica.csproj;neutral

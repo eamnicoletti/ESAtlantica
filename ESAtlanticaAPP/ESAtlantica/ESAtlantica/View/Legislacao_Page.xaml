@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESAtlantica.View.Legislacao_Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Grid	Padding="5,10,5,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition	Height="Auto"/>
+                            <RowDefinition	Height="Auto"/>
+                            <RowDefinition	Height="Auto"/>
+                            <RowDefinition	Height="Auto"/>
+                            <RowDefinition	Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition	Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0">
+                            <Label Text="Legislação de Apoio" Font="Bold, 18" TextColor="DarkGreen" HorizontalTextAlignment="Center" 
+                                           BackgroundColor="GhostWhite" Opacity="0.6"/>
+                        </StackLayout>
+
+                        <Frame	Grid.Row="1" OutlineColor="Black" HasShadow="True" Padding="5,5,5,5">
+                            <StackLayout>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition	Height="Auto"/>
+                                    <RowDefinition	Height="Auto"/>
+                                    <RowDefinition	Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Picker Title="Natureza da Legislação" Grid.Row="0" SelectedIndexChanged="PckLegislacao_SelectedIndexChanged" IsVisible="True">
+                                        <Picker.Items>
+                                            <x:String x:Name="pckItAPP">Área de Preservação Permanente - APP</x:String>
+                                            <x:String x:Name="pckItFauna">Crimes contra a Fauna</x:String>
+                                            <x:String x:Name="pckItFlora">Crimes contra a Flora</x:String>
+                                            <x:String x:Name="pckItDegradacao">Poluição e outros Crimes Ambientais</x:String>
+                                            <x:String x:Name="pckItPoluicao">Crimes contra o Ordenamento Urbano e o Patrimônio Cultural</x:String>
+                                        </Picker.Items>
+                                    </Picker>
+                                    
+                                    <!-- ************************************* APP *********************************** -->
+                                    
+                                <StackLayout x:Name="stLtAPP" Grid.Row="1" IsVisible="False">
+
+                                        <Label Text="Lei Nº 12.651, de 25 de maio de 2012." TextColor="DarkSlateGray" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                                    
+                                        <Label Text="Art. 4.  Considera-se Área de Preservação Permanente, em zonas rurais ou urbanas, para os efeitos desta Lei:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                    
+                                    <Label Text="I - as faixas marginais de qualquer curso d'água natural perene e intermitente, excluídos os efêmeros, desde a borda da calha do leito regular, em largura mínima de:" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="a) 30 (trinta) metros, para os cursos d'água de menos de 10 (dez) metros de largura;" TextColor="DimGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="b) 50 (cinquenta) metros, para os cursos d'água que tenham de 10 (dez) a 50 (cinquenta) metros de largura;" TextColor="DimGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="d) 200 (duzentos) metros, para os cursos d'água que tenham de 200 (duzentos) a 600 (seiscentos) metros de largura;" TextColor="DimGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="e) 500 (quinhentos) metros, para os cursos d'água que tenham largura superior a 600 (seiscentos) metros;" TextColor="DimGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                    <Label Text="II - as áreas no entorno dos lagos e lagoas naturais, em faixa com largura mínima de:" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="a) 100 (cem) metros, em zonas rurais, exceto para o corpo d'água com até 20 (vinte) hectares de superfície, cuja faixa marginal será de 50 (cinquenta) metros;" TextColor="DimGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="b) 30 (trinta) metros, em zonas urbanas;" TextColor="DimGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                    <Label Text="III - as áreas no entorno dos reservatórios d'água artificiais, decorrentes de barramento ou represamento de cursos d'água naturais, na faixa definida na licença ambiental do empreendimento;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="IV - as áreas no entorno das nascentes e dos olhos d'água perenes, qualquer que seja sua situação topográfica, no raio mínimo de 50 (cinquenta) metros;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="V - as encostas ou partes destas com declividade superior a 45°, equivalente a 100% (cem por cento) na linha de maior declive;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="VI - as restingas, como fixadoras de dunas ou estabilizadoras de mangues;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="VII - os manguezais, em toda a sua extensão;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="VIII - as bordas dos tabuleiros ou chapadas, até a linha de ruptura do relevo, em faixa nunca inferior a 100 (cem) metros em projeções horizontais;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="IX - no topo de morros, montes, montanhas e serras, com altura mínima de 100 (cem) metros e inclinação média maior que 25°, as áreas delimitadas a partir da curva de nível correspondente a 2/3 (dois terços) da altura mínima da elevação sempre em relação à base, sendo esta definida pelo plano horizontal determinado por planície ou espelho d'água adjacente ou, nos relevos ondulados, pela cota do ponto de sela mais próximo da elevação;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="X - as áreas em altitude superior a 1.800 (mil e oitocentos) metros, qualquer que seja a vegetação;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="XI - em veredas, a faixa marginal, em projeção horizontal, com largura mínima de 50 (cinquenta) metros, a partir do espaço permanentemente brejoso e encharcado." 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="X - as áreas em altitude superior a 1.800 (mil e oitocentos) metros, qualquer que seja a vegetação;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="§ 1o  Não será exigida Área de Preservação Permanente no entorno de reservatórios artificiais de água que não decorram de barramento ou represamento de cursos d'água naturais. " 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="§ 2o  (Revogado).  " 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="§ 3o  (VETADO). " 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="§ 4o  Nas acumulações naturais ou artificiais de água com superfície inferior a 1 (um) hectare, fica dispensada a reserva da faixa de proteção prevista nos incisos II e III do caput, vedada nova supressão de áreas de vegetação nativa, salvo autorização do órgão ambiental competente do Sistema Nacional do Meio Ambiente - Sisnama. " 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="§ 5o  É admitido, para a pequena propriedade ou posse rural familiar, de que trata o inciso V do art. 3o desta Lei, o plantio de culturas temporárias e sazonais de vazante de ciclo curto na faixa de terra que fica exposta no período de vazante dos rios ou lagos, desde que não implique supressão de novas áreas de vegetação nativa, seja conservada a qualidade da água e do solo e seja protegida a fauna silvestre. " 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="§ 6o  Nos imóveis rurais com até 15 (quinze) módulos fiscais, é admitida, nas áreas de que tratam os incisos I e II do caput deste artigo, a prática da aquicultura e a infraestrutura física diretamente a ela associada, desde que: " 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="I - sejam adotadas práticas sustentáveis de manejo de solo e água e de recursos hídricos, garantindo sua qualidade e quantidade, de acordo com norma dos Conselhos Estaduais de Meio Ambiente;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="II - esteja de acordo com os respectivos planos de bacia ou planos de gestão de recursos hídricos;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="III - seja realizado o licenciamento pelo órgão ambiental competente;" 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="IV - o imóvel esteja inscrito no Cadastro Ambiental Rural - CAR." 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="V - não implique novas supressões de vegetação nativa. " 
+                               TextColor="DarkSlateGray" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                </StackLayout>
+                                    
+                                <!-- ********************************** FAUNA ******************************************* -->
+
+                                <StackLayout x:Name="stLtFauna" Grid.Row="2" IsVisible="False">
+                                    
+                                        <Label Text="Lei Nº 9.605, DE 12 de fevereiro 1998." TextColor="DarkSlateGray" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                                    
+                                        <Label Text="Art. 29. Matar, perseguir, caçar, apanhar, utilizar espécimes da fauna silvestre, nativos ou em rota migratória, sem a devida permissão, licença ou autorização da autoridade competente, ou em desacordo com a obtida:" 
+                               TextColor="DarkGreen" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 1º Incorre nas mesmas penas:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="I - quem impede a procriação da fauna, sem licença, autorização ou em desacordo com a obtida;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - quem modifica, danifica ou destrói ninho, abrigo ou criadouro natural;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                    <Label Text="III - quem vende, expõe à venda, exporta ou adquire, guarda, tem em cativeiro ou depósito, utiliza ou transporta ovos, larvas ou espécimes da fauna silvestre, nativa ou em rota migratória, bem como produtos e objetos dela oriundos, provenientes de criadouros não autorizados ou sem a devida permissão, licença ou autorização da autoridade competente." 
+                                           TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 2º No caso de guarda doméstica de espécie silvestre não considerada ameaçada de extinção, pode o juiz, considerando as circunstâncias, deixar de aplicar a pena." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 3° São espécimes da fauna silvestre todos aqueles pertencentes às espécies nativas, migratórias e quaisquer outras, aquáticas ou terrestres, que tenham todo ou parte de seu ciclo de vida ocorrendo dentro dos limites do território brasileiro, ou águas jurisdicionais brasileiras." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 4º A pena é aumentada de metade, se o crime é praticado:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="I - contra espécie rara ou considerada ameaçada de extinção, ainda que somente no local da infração;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - em período proibido à caça;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="III - durante a noite;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="IV - com abuso de licença;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="V - em unidade de conservação;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="VI - com emprego de métodos ou instrumentos capazes de provocar destruição em massa." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 5º A pena é aumentada até o triplo, se o crime decorre do exercício de caça profissional." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 6º As disposições deste artigo não se aplicam aos atos de pesca." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                    <Label Text="Art. 30. Exportar para o exterior peles e couros de anfíbios e répteis em bruto, sem a autorização da autoridade ambiental competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de um a três anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="Art. 31. Introduzir espécime animal no País, sem parecer técnico oficial favorável e licença expedida por autoridade competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de três meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="Art. 31. Introduzir espécime animal no País, sem parecer técnico oficial favorável e licença expedida por autoridade competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de três meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="Art. 32. Praticar ato de abuso, maus-tratos, ferir ou mutilar animais silvestres, domésticos ou domesticados, nativos ou exóticos:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de três meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 1º Incorre nas mesmas penas quem realiza experiência dolorosa ou cruel em animal vivo, ainda que para fins didáticos ou científicos, quando existirem recursos alternativos." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 2º A pena é aumentada de um sexto a um terço, se ocorre morte do animal." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                    <Label Text="Art. 33. Provocar, pela emissão de efluentes ou carreamento de materiais, o perecimento de espécimes da fauna aquática existentes em rios, lagos, açudes, lagoas, baías ou águas jurisdicionais brasileiras:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold" FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de um a três anos, ou multa, ou ambas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. Incorre nas mesmas penas:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="I - quem causa degradação em viveiros, açudes ou estações de aqüicultura de domínio público;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - quem explora campos naturais de invertebrados aquáticos e algas, sem licença, permissão ou autorização da autoridade competente;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="III - quem fundeia embarcações ou lança detritos de qualquer natureza sobre bancos de moluscos ou corais, devidamente demarcados em carta náutica." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                    <Label Text="Art. 34. Pescar em período no qual a pesca seja proibida ou em lugares interditados por órgão competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold" FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção de um ano a três anos ou multa, ou ambas as penas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. Incorre nas mesmas penas quem:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="I - pesca espécies que devam ser preservadas ou espécimes com tamanhos inferiores aos permitidos;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - pesca quantidades superiores às permitidas, ou mediante a utilização de aparelhos, petrechos, técnicas e métodos não permitidos;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="III - transporta, comercializa, beneficia ou industrializa espécimes provenientes da coleta, apanha e pesca proibidas." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                    <Label Text="Art. 35. Pescar mediante a utilização de:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="I - explosivos ou substâncias que, em contato com a água, produzam efeito semelhante;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - substâncias tóxicas, ou outro meio proibido pela autoridade competente:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="Pena - reclusão de um ano a cinco anos." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="Art. 36. Para os efeitos desta Lei, considera-se pesca todo ato tendente a retirar, extrair, coletar, apanhar, apreender ou capturar espécimes dos grupos dos peixes, crustáceos, moluscos e vegetais hidróbios, suscetíveis ou não de aproveitamento econômico, ressalvadas as espécies ameaçadas de extinção, constantes nas listas oficiais da fauna e da flora." 
+                               TextColor="DarkGreen" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    <Label Text="Art. 37. Não é crime o abate de animal, quando realizado:" 
+                               TextColor="DarkGreen" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="I - em estado de necessidade, para saciar a fome do agente ou de sua família;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - para proteger lavouras, pomares e rebanhos da ação predatória ou destruidora de animais, desde que legal e expressamente autorizado pela autoridade competente;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="III – (VETADO)" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="IV - por ser nocivo o animal, desde que assim caracterizado pelo órgão competente." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                </StackLayout>
+                                    
+                                    <!-- ************************************** FLORA ****************************************** -->
+                                    
+                                    <StackLayout x:Name="stLtFlora" Grid.Row="2" IsVisible="False">
+                                        
+                                        <Label Text="Lei Nº 9.605, DE 12 de fevereiro 1998." TextColor="DarkSlateGray" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                                        
+                                        <Label Text="Art. 38. Destruir ou danificar floresta considerada de preservação permanente, mesmo que em formação, ou utilizá-la com infringência das normas de proteção:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de um a três anos, ou multa, ou ambas as penas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. Se o crime for culposo, a pena será reduzida à metade." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 38-A.  Destruir ou danificar vegetação primária ou secundária, em estágio avançado ou médio de regeneração, do Bioma Mata Atlântica, ou utilizá-la com infringência das normas de proteção:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de 1 (um) a 3 (três) anos, ou multa, ou ambas as penas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único.  Se o crime for culposo, a pena será reduzida à metade." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 39. Cortar árvores em floresta considerada de preservação permanente, sem permissão da autoridade competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de um a três anos, ou multa, ou ambas as penas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 40. Causar dano direto ou indireto às Unidades de Conservação e às áreas de que trata o art. 27 do Decreto nº 99.274, de 6 de junho de 1990, independentemente de sua localização:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de um a cinco anos." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 1o Entende-se por Unidades de Conservação de Proteção Integral as Estações Ecológicas, as Reservas Biológicas, os Parques Nacionais, os Monumentos Naturais e os Refúgios de Vida Silvestre." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 2o A ocorrência de dano afetando espécies ameaçadas de extinção no interior das Unidades de Conservação de Proteção Integral será considerada circunstância agravante para a fixação da pena." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 3º Se o crime for culposo, a pena será reduzida à metade." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 40-A. (VETADO) :" TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 41. Provocar incêndio em mata ou floresta:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de dois a quatro anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. Se o crime é culposo, a pena é de detenção de seis meses a um ano, e multa." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 42. Fabricar, vender, transportar ou soltar balões que possam provocar incêndios nas florestas e demais formas de vegetação, em áreas urbanas ou qualquer tipo de assentamento humano:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção de um a três anos ou multa, ou ambas as penas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 43. (VETADO)" TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 44. Extrair de florestas de domínio público ou consideradas de preservação permanente, sem prévia autorização, pedra, areia, cal ou qualquer espécie de minerais:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 45. Cortar ou transformar em carvão madeira de lei, assim classificada por ato do Poder Público, para fins industriais, energéticos ou para qualquer outra exploração, econômica ou não, em desacordo com as determinações legais:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de um a dois anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 46. Receber ou adquirir, para fins comerciais ou industriais, madeira, lenha, carvão e outros produtos de origem vegetal, sem exigir a exibição de licença do vendedor, outorgada pela autoridade competente, e sem munir-se da via que deverá acompanhar o produto até final beneficiamento:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. Incorre nas mesmas penas quem vende, expõe à venda, tem em depósito, transporta ou guarda madeira, lenha, carvão e outros produtos de origem vegetal, sem licença válida para todo o tempo da viagem ou do armazenamento, outorgada pela autoridade competente." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 47. (VETADO)" TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 48. Impedir ou dificultar a regeneração natural de florestas e demais formas de vegetação:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 49. Destruir, danificar, lesar ou maltratar, por qualquer modo ou meio, plantas de ornamentação de logradouros públicos ou em propriedade privada alheia:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de três meses a um ano, ou multa, ou ambas as penas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. No crime culposo, a pena é de um a seis meses, ou multa." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 50. Destruir ou danificar florestas nativas ou plantadas ou vegetação fixadora de dunas, protetora de mangues, objeto de especial preservação:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de três meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 50-A. Desmatar, explorar economicamente ou degradar floresta, plantada ou nativa, em terras de domínio público ou devolutas, sem autorização do órgão competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão de 2 (dois) a 4 (quatro) anos e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 1o Não é crime a conduta praticada quando necessária à subsistência imediata pessoal do agente ou de sua família." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 2o Se a área explorada for superior a 1.000 ha (mil hectares), a pena será aumentada de 1 (um) ano por milhar de hectare." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 51. Comercializar motosserra ou utilizá-la em florestas e nas demais formas de vegetação, sem licença ou registro da autoridade competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de três meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 52. Penetrar em Unidades de Conservação conduzindo substâncias ou instrumentos próprios para caça ou para exploração de produtos ou subprodutos florestais, sem licença da autoridade competente:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 53. Nos crimes previstos nesta Seção, a pena é aumentada de um sexto a um terço se:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="I - do fato resulta a diminuição de águas naturais, a erosão do solo ou a modificação do regime climático;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - o crime é cometido:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="a) no período de queda das sementes;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="b) no período de formação de vegetações;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="c) contra espécies raras ou ameaçadas de extinção, ainda que a ameaça ocorra somente no local da infração;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="d) em época de seca ou inundação;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="e) durante a noite, em domingo ou feriado." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                    </StackLayout>
+
+                                    <!-- ************************************** POLUICAO E OUTROS CRIMES AMBIENTAIS ****************************************** -->
+                                    
+                                    <StackLayout x:Name="stLtPoluicao" Grid.Row="3" IsVisible="False">
+                                        
+                                        <Label Text="Lei Nº 9.605, DE 12 de fevereiro 1998." TextColor="DarkSlateGray" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                                        
+                                        <Label Text="Art. 54. Causar poluição de qualquer natureza em níveis tais que resultem ou possam resultar em danos à saúde humana, ou que provoquem a mortandade de animais ou a destruição significativa da flora:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de um a quatro anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 1º Se o crime é culposo:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="I - tornar uma área, urbana ou rural, imprópria para a ocupação humana;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - causar poluição atmosférica que provoque a retirada, ainda que momentânea, dos habitantes das áreas afetadas, ou que cause danos diretos à saúde da população;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="III - causar poluição hídrica que torne necessária a interrupção do abastecimento público de água de uma comunidade;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="IV - dificultar ou impedir o uso público das praias;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="V - ocorrer por lançamento de resíduos sólidos, líquidos ou gasosos, ou detritos, óleos ou substâncias oleosas, em desacordo com as exigências estabelecidas em leis ou regulamentos:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="Pena - reclusão, de um a cinco anos." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 3º Incorre nas mesmas penas previstas no parágrafo anterior quem deixar de adotar, quando assim o exigir a autoridade competente, medidas de precaução em caso de risco de dano ambiental grave ou irreversível." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 55. Executar pesquisa, lavra ou extração de recursos minerais sem a competente autorização, permissão, concessão ou licença, ou em desacordo com a obtida:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. Nas mesmas penas incorre quem deixa de recuperar a área pesquisada ou explorada, nos termos da autorização, permissão, licença, concessão ou determinação do órgão competente." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 56. Produzir, processar, embalar, importar, exportar, comercializar, fornecer, transportar, armazenar, guardar, ter em depósito ou usar produto ou substância tóxica, perigosa ou nociva à saúde humana ou ao meio ambiente, em desacordo com as exigências estabelecidas em leis ou nos seus regulamentos:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de um a quatro anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 1o  Nas mesmas penas incorre quem: " TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="I - abandona os produtos ou substâncias referidos no caput ou os utiliza em desacordo com as normas ambientais ou de segurança;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - manipula, acondiciona, armazena, coleta, transporta, reutiliza, recicla ou dá destinação final a resíduos perigosos de forma diversa da estabelecida em lei ou regulamento. " TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 2º Se o produto ou a substância for nuclear ou radioativa, a pena é aumentada de um sexto a um terço. " TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 3º Se o crime é culposo:" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 57. (VETADO)" TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        
+                                        <Label Text="Art. 58. Nos crimes dolosos previstos nesta Seção, as penas serão aumentadas:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="I - de um sexto a um terço, se resulta dano irreversível à flora ou ao meio ambiente em geral;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - de um terço até a metade, se resulta lesão corporal de natureza grave em outrem;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="III - até o dobro, se resultar a morte de outrem." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="Parágrafo único. As penalidades previstas neste artigo somente serão aplicadas se do fato não resultar crime mais grave." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 59. (VETADO)" TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 60. Construir, reformar, ampliar, instalar ou fazer funcionar, em qualquer parte do território nacional, estabelecimentos, obras ou serviços potencialmente poluidores, sem licença ou autorização dos órgãos ambientais competentes, ou contrariando as normas legais e regulamentares pertinentes:"
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de um a seis meses, ou multa, ou ambas as penas cumulativamente." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 61. Disseminar doença ou praga ou espécies que possam causar dano à agricultura, à pecuária, à fauna, à flora ou aos ecossistemas:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de um a quatro anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                    </StackLayout>
+
+                                    <!-- ************************************** Ordenamento Urbano e o Patrimônio Cultural ****************************************** -->
+
+                                    <StackLayout x:Name="stLtPatrimonio" Grid.Row="3" IsVisible="False">
+
+                                        <Label Text="Lei Nº 9.605, DE 12 de fevereiro 1998." TextColor="DarkSlateGray" HorizontalTextAlignment="Center" FontSize="Medium"/>
+
+                                        <Label Text="Art. 62. Destruir, inutilizar ou deteriorar:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="I - bem especialmente protegido por lei, ato administrativo ou decisão judicial;" TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="II - arquivo, registro, museu, biblioteca, pinacoteca, instalação científica ou similar protegido por lei, ato administrativo ou decisão judicial:" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="Pena - reclusão, de um a três anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="Parágrafo único. Se o crime for culposo, a pena é de seis meses a um ano de detenção, sem prejuízo da multa." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                        <Label Text="Art. 63. Alterar o aspecto ou estrutura de edificação ou local especialmente protegido por lei, ato administrativo ou decisão judicial, em razão de seu valor paisagístico, ecológico, turístico, artístico, histórico, cultural, religioso, arqueológico, etnográfico ou monumental, sem autorização da autoridade competente ou em desacordo com a concedida:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - reclusão, de um a três anos, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 64. Promover construção em solo não edificável, ou no seu entorno, assim considerado em razão de seu valor paisagístico, ecológico, artístico, turístico, histórico, cultural, religioso, arqueológico, etnográfico ou monumental, sem autorização da autoridade competente ou em desacordo com a concedida:" 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de seis meses a um ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+
+                                        <Label Text="Art. 65.  Pichar ou por outro meio conspurcar edificação ou monumento urbano: " 
+                               TextColor="DarkGreen" LineBreakMode="WordWrap" Font="Bold"  FontSize="Small"></Label>
+                                        <Label Text="Pena - detenção, de 3 (três) meses a 1 (um) ano, e multa." TextColor="DarkSlateGray" Font="Bold" LineBreakMode="WordWrap"  FontSize="Small"></Label>
+                                        <Label Text="§ 1o  Se o ato for realizado em monumento ou coisa tombada em virtude do seu valor artístico, arqueológico ou histórico, a pena é de 6 (seis) meses a 1 (um) ano de detenção e multa." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+                                        <Label Text="§ 2o  Não constitui crime a prática de grafite realizada com o objetivo de valorizar o patrimônio público ou privado mediante manifestação artística, desde que consentida pelo proprietário e, quando couber, pelo locatário ou arrendatário do bem privado e, no caso de bem público, com a autorização do órgão competente e a observância das posturas municipais e das normas editadas pelos órgãos governamentais responsáveis pela preservação e conservação do patrimônio histórico e artístico nacional." TextColor="DarkSlateGray" LineBreakMode="WordWrap" FontSize="Small"/>
+
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>                        
+                    </Frame>
+                   
+                </Grid>
+                
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                <AbsoluteLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="3,3,3,3">
+                    <Image Source="governoES.png"></Image>
+                </AbsoluteLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
